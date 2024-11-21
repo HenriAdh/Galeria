@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="ProjetoDAM.AddPhotosPage">
+    <ScrollView>
+        <VerticalStackLayout Spacing="15" Margin="20">
+            <Border 
+                Stroke="#000"
+                StrokeThickness="1"
+                HorizontalOptions="Center"
+                Margin="10">
+                <StackLayout>
+                    <Image x:Name="LoadedPhoto" Source="default_photo.png" Aspect="AspectFit" />
+                </StackLayout>
+            </Border>
+
+            <Button x:Name="TirarFoto" Text="Tirar Foto" Clicked="TirarFoto_Clicked" TextColor="#FFF" HorizontalOptions="FillAndExpand" />
+            <Button x:Name="ImportarFoto" Text="Importar Foto" Clicked="ImportarFoto_Clicked" TextColor="#FFF" HorizontalOptions="FillAndExpand" />
+
+            <Entry x:Name="Description" Placeholder="Descrição" Margin="0,0,0,10" />
+
+            <Button Text="Salvar" x:Name="SalvarFoto" Clicked="SalvarFoto_Clicked" TextColor="#FFF" />
+
+            <Button Text="Voltar" x:Name="Voltar" Clicked="Voltar_Clicked" TextColor="#FFF" />
+        </VerticalStackLayout>
+    </ScrollView>
+</ContentPage>
